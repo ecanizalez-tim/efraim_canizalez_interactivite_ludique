@@ -1,7 +1,3 @@
-Qunand on clique sur a les poisson vont nager et ont entendra des vague.
+Qunand on clique sur s les poisson vont nager et ont entendra de l'eau.
 
-Quand on clique sur s un reuqin passera. 
-
-Clique gauche fera des bulles.
-
-Clique droit fait tout exploser.
+QUand on clique sur v on fera des bulles et il y aura le son de bulle.
