@@ -1,0 +1,288 @@
+[gd_scene load_steps=16 format=3 uid="uid://by14xk4lavjqa"]
+
+[ext_resource type="Texture2D" uid="uid://c4xtvhni206he" path="res://Default/terrain_sand_a.png" id="1_01mqa"]
+[ext_resource type="Texture2D" uid="uid://chvvbbnyjt5x7" path="res://Default/terrain_sand_d.png" id="2_ayvwv"]
+[ext_resource type="Texture2D" uid="uid://dpjdbpimcluh1" path="res://Default/terrain_sand_b.png" id="3_2jimq"]
+[ext_resource type="Texture2D" uid="uid://bpc3hfhbs5edk" path="res://Default/terrain_sand_c.png" id="4_o2vkr"]
+[ext_resource type="Texture2D" uid="uid://csfq4dmnh6aae" path="res://Default/background_terrain.png" id="5_ixtv7"]
+[ext_resource type="Texture2D" uid="uid://bttbgrvkn75hg" path="res://Default/seaweed_green_a.png" id="6_nc7ny"]
+[ext_resource type="Texture2D" uid="uid://cy7oyooo3vgn5" path="res://Default/seaweed_pink_a.png" id="7_t6in5"]
+[ext_resource type="Texture2D" uid="uid://ddd30nc5hnrdk" path="res://Default/seaweed_green_b.png" id="8_jvxcj"]
+[ext_resource type="Texture2D" uid="uid://bsiqgqi482rtk" path="res://Default/rock_a.png" id="9_vyri2"]
+[ext_resource type="Texture2D" uid="uid://bm2xn7f0fe1wn" path="res://Default/rock_b.png" id="10_3467d"]
+[ext_resource type="Texture2D" uid="uid://cn5a77bvayjd2" path="res://Default/rock_b_outline.png" id="11_0pxus"]
+[ext_resource type="Texture2D" uid="uid://bhwsk56erlue7" path="res://Default/rock_a_outline.png" id="12_cfhfo"]
+[ext_resource type="Texture2D" uid="uid://wofc5ryxvocm" path="res://Default/seaweed_green_b_outline.png" id="13_pwyt2"]
+[ext_resource type="Texture2D" uid="uid://8xvs3gwxw8dm" path="res://Default/seaweed_green_a_outline.png" id="14_clw3p"]
+[ext_resource type="Texture2D" uid="uid://dbe5ow8m83se2" path="res://Default/seaweed_pink_a_outline.png" id="15_d8os5"]
+
+[node name="node 2d" type="Node2D"]
+
+[node name="TerrainSandA" type="Sprite2D" parent="."]
+position = Vector2(32, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandD" type="Sprite2D" parent="."]
+position = Vector2(96, 487)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandB" type="Sprite2D" parent="."]
+position = Vector2(160, 487)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandC" type="Sprite2D" parent="."]
+position = Vector2(224, 487)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandB2" type="Sprite2D" parent="."]
+position = Vector2(288, 487)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA2" type="Sprite2D" parent="."]
+position = Vector2(352, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandC2" type="Sprite2D" parent="."]
+position = Vector2(416, 487)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandD2" type="Sprite2D" parent="."]
+position = Vector2(480, 487)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandA3" type="Sprite2D" parent="."]
+position = Vector2(544, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB3" type="Sprite2D" parent="."]
+position = Vector2(608, 487)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandC3" type="Sprite2D" parent="."]
+position = Vector2(672, 487)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandD3" type="Sprite2D" parent="."]
+position = Vector2(800, 487)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandA4" type="Sprite2D" parent="."]
+position = Vector2(736, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB4" type="Sprite2D" parent="."]
+position = Vector2(864, 487)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandC4" type="Sprite2D" parent="."]
+position = Vector2(928, 487)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandA5" type="Sprite2D" parent="."]
+position = Vector2(992, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandA6" type="Sprite2D" parent="."]
+position = Vector2(1120, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandA7" type="Sprite2D" parent="."]
+position = Vector2(1056, 487)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandA9" type="Sprite2D" parent="."]
+position = Vector2(32, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB5" type="Sprite2D" parent="."]
+position = Vector2(96, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA10" type="Sprite2D" parent="."]
+position = Vector2(160, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB6" type="Sprite2D" parent="."]
+position = Vector2(224, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA11" type="Sprite2D" parent="."]
+position = Vector2(288, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB7" type="Sprite2D" parent="."]
+position = Vector2(352, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA12" type="Sprite2D" parent="."]
+position = Vector2(416, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB8" type="Sprite2D" parent="."]
+position = Vector2(480, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandC5" type="Sprite2D" parent="."]
+position = Vector2(544, 551)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandA13" type="Sprite2D" parent="."]
+position = Vector2(608, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB9" type="Sprite2D" parent="."]
+position = Vector2(672, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA14" type="Sprite2D" parent="."]
+position = Vector2(800, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB10" type="Sprite2D" parent="."]
+position = Vector2(736, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA15" type="Sprite2D" parent="."]
+position = Vector2(1056, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB11" type="Sprite2D" parent="."]
+position = Vector2(864, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA16" type="Sprite2D" parent="."]
+position = Vector2(928, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB12" type="Sprite2D" parent="."]
+position = Vector2(1056, 551)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA17" type="Sprite2D" parent="."]
+position = Vector2(1120, 551)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandD4" type="Sprite2D" parent="."]
+position = Vector2(224, 551)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandD5" type="Sprite2D" parent="."]
+position = Vector2(992, 551)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandA8" type="Sprite2D" parent="."]
+position = Vector2(32, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandC6" type="Sprite2D" parent="."]
+position = Vector2(96, 615)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandA18" type="Sprite2D" parent="."]
+position = Vector2(160, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB13" type="Sprite2D" parent="."]
+position = Vector2(288, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandD6" type="Sprite2D" parent="."]
+position = Vector2(352, 615)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandC7" type="Sprite2D" parent="."]
+position = Vector2(1120, 615)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandA19" type="Sprite2D" parent="."]
+position = Vector2(992, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB14" type="Sprite2D" parent="."]
+position = Vector2(928, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandD7" type="Sprite2D" parent="."]
+position = Vector2(864, 615)
+texture = ExtResource("2_ayvwv")
+
+[node name="TerrainSandC8" type="Sprite2D" parent="."]
+position = Vector2(672, 615)
+texture = ExtResource("4_o2vkr")
+
+[node name="TerrainSandB15" type="Sprite2D" parent="."]
+position = Vector2(416, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA20" type="Sprite2D" parent="."]
+position = Vector2(480, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB16" type="Sprite2D" parent="."]
+position = Vector2(800, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA21" type="Sprite2D" parent="."]
+position = Vector2(544, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="TerrainSandB17" type="Sprite2D" parent="."]
+position = Vector2(608, 615)
+texture = ExtResource("3_2jimq")
+
+[node name="TerrainSandA22" type="Sprite2D" parent="."]
+position = Vector2(736, 615)
+texture = ExtResource("1_01mqa")
+
+[node name="BackgroundTerrain" type="Sprite2D" parent="."]
+position = Vector2(576, 228)
+scale = Vector2(18, 7.125)
+texture = ExtResource("5_ixtv7")
+
+[node name="SeaweedGreenA" type="Sprite2D" parent="."]
+position = Vector2(96, 424)
+texture = ExtResource("6_nc7ny")
+
+[node name="SeaweedPinkA" type="Sprite2D" parent="."]
+position = Vector2(608, 424)
+texture = ExtResource("7_t6in5")
+
+[node name="SeaweedGreenA2" type="Sprite2D" parent="."]
+position = Vector2(1128, 424)
+texture = ExtResource("6_nc7ny")
+
+[node name="SeaweedGreenB" type="Sprite2D" parent="."]
+position = Vector2(859, 424)
+texture = ExtResource("8_jvxcj")
+
+[node name="RockA" type="Sprite2D" parent="."]
+position = Vector2(272, 424)
+texture = ExtResource("9_vyri2")
+
+[node name="RockB" type="Sprite2D" parent="."]
+position = Vector2(976, 424)
+texture = ExtResource("10_3467d")
+
+[node name="RockBOutline" type="Sprite2D" parent="."]
+position = Vector2(976, 424)
+texture = ExtResource("11_0pxus")
+
+[node name="RockAOutline" type="Sprite2D" parent="."]
+position = Vector2(272, 424)
+texture = ExtResource("12_cfhfo")
+
+[node name="SeaweedGreenBOutline" type="Sprite2D" parent="."]
+position = Vector2(861, 424)
+texture = ExtResource("13_pwyt2")
+
+[node name="SeaweedGreenAOutline" type="Sprite2D" parent="."]
+position = Vector2(1128, 424)
+texture = ExtResource("14_clw3p")
+
+[node name="SeaweedGreenAOutline2" type="Sprite2D" parent="."]
+position = Vector2(96, 424)
+texture = ExtResource("14_clw3p")
+
+[node name="SeaweedPinkAOutline" type="Sprite2D" parent="."]
+position = Vector2(608, 424)
+texture = ExtResource("15_d8os5")
