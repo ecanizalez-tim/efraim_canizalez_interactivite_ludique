@@ -1,288 +1,306 @@
-[gd_scene load_steps=16 format=3 uid="uid://by14xk4lavjqa"]
+[gd_scene load_steps=18 format=3 uid="uid://by14xk4lavjqa"]
 
 [ext_resource type="Texture2D" uid="uid://c4xtvhni206he" path="res://Default/terrain_sand_a.png" id="1_01mqa"]
 [ext_resource type="Texture2D" uid="uid://chvvbbnyjt5x7" path="res://Default/terrain_sand_d.png" id="2_ayvwv"]
 [ext_resource type="Texture2D" uid="uid://dpjdbpimcluh1" path="res://Default/terrain_sand_b.png" id="3_2jimq"]
 [ext_resource type="Texture2D" uid="uid://bpc3hfhbs5edk" path="res://Default/terrain_sand_c.png" id="4_o2vkr"]
 [ext_resource type="Texture2D" uid="uid://csfq4dmnh6aae" path="res://Default/background_terrain.png" id="5_ixtv7"]
-[ext_resource type="Texture2D" uid="uid://bttbgrvkn75hg" path="res://Default/seaweed_green_a.png" id="6_nc7ny"]
-[ext_resource type="Texture2D" uid="uid://cy7oyooo3vgn5" path="res://Default/seaweed_pink_a.png" id="7_t6in5"]
-[ext_resource type="Texture2D" uid="uid://ddd30nc5hnrdk" path="res://Default/seaweed_green_b.png" id="8_jvxcj"]
-[ext_resource type="Texture2D" uid="uid://bsiqgqi482rtk" path="res://Default/rock_a.png" id="9_vyri2"]
-[ext_resource type="Texture2D" uid="uid://bm2xn7f0fe1wn" path="res://Default/rock_b.png" id="10_3467d"]
 [ext_resource type="Texture2D" uid="uid://cn5a77bvayjd2" path="res://Default/rock_b_outline.png" id="11_0pxus"]
+[ext_resource type="Texture2D" uid="uid://b4i15kriigc4i" path="res://Spritesheet/spritesheet-double.png" id="11_0ueyj"]
+[ext_resource type="Script" uid="uid://cungonptuhry7" path="res://fish_blue.gd" id="12_3id0f"]
 [ext_resource type="Texture2D" uid="uid://bhwsk56erlue7" path="res://Default/rock_a_outline.png" id="12_cfhfo"]
+[ext_resource type="Script" uid="uid://depty3jn4omad" path="res://fish_red.gd" id="13_0b3mh"]
 [ext_resource type="Texture2D" uid="uid://wofc5ryxvocm" path="res://Default/seaweed_green_b_outline.png" id="13_pwyt2"]
 [ext_resource type="Texture2D" uid="uid://8xvs3gwxw8dm" path="res://Default/seaweed_green_a_outline.png" id="14_clw3p"]
 [ext_resource type="Texture2D" uid="uid://dbe5ow8m83se2" path="res://Default/seaweed_pink_a_outline.png" id="15_d8os5"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf4f4"]
+atlas = ExtResource("11_0ueyj")
+region = Rect2(1152, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3id0f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xf4f4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0b3mh"]
+atlas = ExtResource("11_0ueyj")
+region = Rect2(896, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nc7ny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0b3mh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="node 2d" type="Node2D"]
 
-[node name="TerrainSandA" type="Sprite2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
 position = Vector2(32, 487)
+
+[node name="TerrainSandA" type="Sprite2D" parent="Node2D"]
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandD" type="Sprite2D" parent="."]
-position = Vector2(96, 487)
+[node name="TerrainSandD" type="Sprite2D" parent="Node2D"]
+position = Vector2(64, 0)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandB" type="Sprite2D" parent="."]
-position = Vector2(160, 487)
+[node name="TerrainSandB" type="Sprite2D" parent="Node2D"]
+position = Vector2(128, 0)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandC" type="Sprite2D" parent="."]
-position = Vector2(224, 487)
+[node name="TerrainSandC" type="Sprite2D" parent="Node2D"]
+position = Vector2(192, 0)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandB2" type="Sprite2D" parent="."]
-position = Vector2(288, 487)
+[node name="TerrainSandB2" type="Sprite2D" parent="Node2D"]
+position = Vector2(256, 0)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA2" type="Sprite2D" parent="."]
-position = Vector2(352, 487)
+[node name="TerrainSandA2" type="Sprite2D" parent="Node2D"]
+position = Vector2(320, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandC2" type="Sprite2D" parent="."]
-position = Vector2(416, 487)
+[node name="TerrainSandC2" type="Sprite2D" parent="Node2D"]
+position = Vector2(384, 0)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandD2" type="Sprite2D" parent="."]
-position = Vector2(480, 487)
+[node name="TerrainSandD2" type="Sprite2D" parent="Node2D"]
+position = Vector2(448, 0)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandA3" type="Sprite2D" parent="."]
-position = Vector2(544, 487)
+[node name="TerrainSandA3" type="Sprite2D" parent="Node2D"]
+position = Vector2(512, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB3" type="Sprite2D" parent="."]
-position = Vector2(608, 487)
+[node name="TerrainSandB3" type="Sprite2D" parent="Node2D"]
+position = Vector2(576, 0)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandC3" type="Sprite2D" parent="."]
-position = Vector2(672, 487)
+[node name="TerrainSandC3" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 0)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandD3" type="Sprite2D" parent="."]
-position = Vector2(800, 487)
+[node name="TerrainSandD3" type="Sprite2D" parent="Node2D"]
+position = Vector2(768, 0)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandA4" type="Sprite2D" parent="."]
-position = Vector2(736, 487)
+[node name="TerrainSandA4" type="Sprite2D" parent="Node2D"]
+position = Vector2(704, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB4" type="Sprite2D" parent="."]
-position = Vector2(864, 487)
+[node name="TerrainSandB4" type="Sprite2D" parent="Node2D"]
+position = Vector2(832, 0)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandC4" type="Sprite2D" parent="."]
-position = Vector2(928, 487)
+[node name="TerrainSandC4" type="Sprite2D" parent="Node2D"]
+position = Vector2(896, 0)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandA5" type="Sprite2D" parent="."]
-position = Vector2(992, 487)
+[node name="TerrainSandA5" type="Sprite2D" parent="Node2D"]
+position = Vector2(960, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandA6" type="Sprite2D" parent="."]
-position = Vector2(1120, 487)
+[node name="TerrainSandA6" type="Sprite2D" parent="Node2D"]
+position = Vector2(1088, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandA7" type="Sprite2D" parent="."]
-position = Vector2(1056, 487)
+[node name="TerrainSandA7" type="Sprite2D" parent="Node2D"]
+position = Vector2(1024, 0)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandA9" type="Sprite2D" parent="."]
-position = Vector2(32, 551)
+[node name="TerrainSandA9" type="Sprite2D" parent="Node2D"]
+position = Vector2(0, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB5" type="Sprite2D" parent="."]
-position = Vector2(96, 551)
+[node name="TerrainSandB5" type="Sprite2D" parent="Node2D"]
+position = Vector2(64, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA10" type="Sprite2D" parent="."]
-position = Vector2(160, 551)
+[node name="TerrainSandA10" type="Sprite2D" parent="Node2D"]
+position = Vector2(128, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB6" type="Sprite2D" parent="."]
-position = Vector2(224, 615)
+[node name="TerrainSandB6" type="Sprite2D" parent="Node2D"]
+position = Vector2(192, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA11" type="Sprite2D" parent="."]
-position = Vector2(288, 551)
+[node name="TerrainSandA11" type="Sprite2D" parent="Node2D"]
+position = Vector2(256, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB7" type="Sprite2D" parent="."]
-position = Vector2(352, 551)
+[node name="TerrainSandB7" type="Sprite2D" parent="Node2D"]
+position = Vector2(320, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA12" type="Sprite2D" parent="."]
-position = Vector2(416, 551)
+[node name="TerrainSandA12" type="Sprite2D" parent="Node2D"]
+position = Vector2(384, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB8" type="Sprite2D" parent="."]
-position = Vector2(480, 551)
+[node name="TerrainSandB8" type="Sprite2D" parent="Node2D"]
+position = Vector2(448, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandC5" type="Sprite2D" parent="."]
-position = Vector2(544, 551)
+[node name="TerrainSandC5" type="Sprite2D" parent="Node2D"]
+position = Vector2(512, 64)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandA13" type="Sprite2D" parent="."]
-position = Vector2(608, 551)
+[node name="TerrainSandA13" type="Sprite2D" parent="Node2D"]
+position = Vector2(576, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB9" type="Sprite2D" parent="."]
-position = Vector2(672, 551)
+[node name="TerrainSandB9" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA14" type="Sprite2D" parent="."]
-position = Vector2(800, 551)
+[node name="TerrainSandA14" type="Sprite2D" parent="Node2D"]
+position = Vector2(768, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB10" type="Sprite2D" parent="."]
-position = Vector2(736, 551)
+[node name="TerrainSandB10" type="Sprite2D" parent="Node2D"]
+position = Vector2(704, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA15" type="Sprite2D" parent="."]
-position = Vector2(1056, 615)
+[node name="TerrainSandA15" type="Sprite2D" parent="Node2D"]
+position = Vector2(1024, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB11" type="Sprite2D" parent="."]
-position = Vector2(864, 551)
+[node name="TerrainSandB11" type="Sprite2D" parent="Node2D"]
+position = Vector2(832, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA16" type="Sprite2D" parent="."]
-position = Vector2(928, 551)
+[node name="TerrainSandA16" type="Sprite2D" parent="Node2D"]
+position = Vector2(896, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB12" type="Sprite2D" parent="."]
-position = Vector2(1056, 551)
+[node name="TerrainSandB12" type="Sprite2D" parent="Node2D"]
+position = Vector2(1024, 64)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA17" type="Sprite2D" parent="."]
-position = Vector2(1120, 551)
+[node name="TerrainSandA17" type="Sprite2D" parent="Node2D"]
+position = Vector2(1088, 64)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandD4" type="Sprite2D" parent="."]
-position = Vector2(224, 551)
+[node name="TerrainSandD4" type="Sprite2D" parent="Node2D"]
+position = Vector2(192, 64)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandD5" type="Sprite2D" parent="."]
-position = Vector2(992, 551)
+[node name="TerrainSandD5" type="Sprite2D" parent="Node2D"]
+position = Vector2(960, 64)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandA8" type="Sprite2D" parent="."]
-position = Vector2(32, 615)
+[node name="TerrainSandA8" type="Sprite2D" parent="Node2D"]
+position = Vector2(0, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandC6" type="Sprite2D" parent="."]
-position = Vector2(96, 615)
+[node name="TerrainSandC6" type="Sprite2D" parent="Node2D"]
+position = Vector2(64, 128)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandA18" type="Sprite2D" parent="."]
-position = Vector2(160, 615)
+[node name="TerrainSandA18" type="Sprite2D" parent="Node2D"]
+position = Vector2(128, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB13" type="Sprite2D" parent="."]
-position = Vector2(288, 615)
+[node name="TerrainSandB13" type="Sprite2D" parent="Node2D"]
+position = Vector2(256, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandD6" type="Sprite2D" parent="."]
-position = Vector2(352, 615)
+[node name="TerrainSandD6" type="Sprite2D" parent="Node2D"]
+position = Vector2(320, 128)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandC7" type="Sprite2D" parent="."]
-position = Vector2(1120, 615)
+[node name="TerrainSandC7" type="Sprite2D" parent="Node2D"]
+position = Vector2(1088, 128)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandA19" type="Sprite2D" parent="."]
-position = Vector2(992, 615)
+[node name="TerrainSandA19" type="Sprite2D" parent="Node2D"]
+position = Vector2(960, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB14" type="Sprite2D" parent="."]
-position = Vector2(928, 615)
+[node name="TerrainSandB14" type="Sprite2D" parent="Node2D"]
+position = Vector2(896, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandD7" type="Sprite2D" parent="."]
-position = Vector2(864, 615)
+[node name="TerrainSandD7" type="Sprite2D" parent="Node2D"]
+position = Vector2(832, 128)
 texture = ExtResource("2_ayvwv")
 
-[node name="TerrainSandC8" type="Sprite2D" parent="."]
-position = Vector2(672, 615)
+[node name="TerrainSandC8" type="Sprite2D" parent="Node2D"]
+position = Vector2(640, 128)
 texture = ExtResource("4_o2vkr")
 
-[node name="TerrainSandB15" type="Sprite2D" parent="."]
-position = Vector2(416, 615)
+[node name="TerrainSandB15" type="Sprite2D" parent="Node2D"]
+position = Vector2(384, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA20" type="Sprite2D" parent="."]
-position = Vector2(480, 615)
+[node name="TerrainSandA20" type="Sprite2D" parent="Node2D"]
+position = Vector2(448, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB16" type="Sprite2D" parent="."]
-position = Vector2(800, 615)
+[node name="TerrainSandB16" type="Sprite2D" parent="Node2D"]
+position = Vector2(768, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA21" type="Sprite2D" parent="."]
-position = Vector2(544, 615)
+[node name="TerrainSandA21" type="Sprite2D" parent="Node2D"]
+position = Vector2(512, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="TerrainSandB17" type="Sprite2D" parent="."]
-position = Vector2(608, 615)
+[node name="TerrainSandB17" type="Sprite2D" parent="Node2D"]
+position = Vector2(576, 128)
 texture = ExtResource("3_2jimq")
 
-[node name="TerrainSandA22" type="Sprite2D" parent="."]
-position = Vector2(736, 615)
+[node name="TerrainSandA22" type="Sprite2D" parent="Node2D"]
+position = Vector2(704, 128)
 texture = ExtResource("1_01mqa")
 
-[node name="BackgroundTerrain" type="Sprite2D" parent="."]
-position = Vector2(576, 228)
+[node name="BackgroundTerrain" type="Sprite2D" parent="Node2D"]
+position = Vector2(544, -259)
 scale = Vector2(18, 7.125)
 texture = ExtResource("5_ixtv7")
 
-[node name="SeaweedGreenA" type="Sprite2D" parent="."]
-position = Vector2(96, 424)
-texture = ExtResource("6_nc7ny")
-
-[node name="SeaweedPinkA" type="Sprite2D" parent="."]
-position = Vector2(608, 424)
-texture = ExtResource("7_t6in5")
-
-[node name="SeaweedGreenA2" type="Sprite2D" parent="."]
-position = Vector2(1128, 424)
-texture = ExtResource("6_nc7ny")
-
-[node name="SeaweedGreenB" type="Sprite2D" parent="."]
-position = Vector2(859, 424)
-texture = ExtResource("8_jvxcj")
-
-[node name="RockA" type="Sprite2D" parent="."]
-position = Vector2(272, 424)
-texture = ExtResource("9_vyri2")
-
-[node name="RockB" type="Sprite2D" parent="."]
-position = Vector2(976, 424)
-texture = ExtResource("10_3467d")
-
-[node name="RockBOutline" type="Sprite2D" parent="."]
-position = Vector2(976, 424)
+[node name="RockBOutline" type="Sprite2D" parent="Node2D"]
+position = Vector2(944, -63)
 texture = ExtResource("11_0pxus")
 
-[node name="RockAOutline" type="Sprite2D" parent="."]
-position = Vector2(272, 424)
+[node name="RockAOutline" type="Sprite2D" parent="Node2D"]
+position = Vector2(240, -63)
 texture = ExtResource("12_cfhfo")
 
-[node name="SeaweedGreenBOutline" type="Sprite2D" parent="."]
-position = Vector2(861, 424)
+[node name="SeaweedGreenBOutline" type="Sprite2D" parent="Node2D"]
+position = Vector2(829, -63)
 texture = ExtResource("13_pwyt2")
 
-[node name="SeaweedGreenAOutline" type="Sprite2D" parent="."]
-position = Vector2(1128, 424)
+[node name="SeaweedGreenAOutline" type="Sprite2D" parent="Node2D"]
+position = Vector2(1096, -63)
 texture = ExtResource("14_clw3p")
 
-[node name="SeaweedGreenAOutline2" type="Sprite2D" parent="."]
-position = Vector2(96, 424)
+[node name="SeaweedGreenAOutline2" type="Sprite2D" parent="Node2D"]
+position = Vector2(64, -63)
 texture = ExtResource("14_clw3p")
 
-[node name="SeaweedPinkAOutline" type="Sprite2D" parent="."]
-position = Vector2(608, 424)
+[node name="SeaweedPinkAOutline" type="Sprite2D" parent="Node2D"]
+position = Vector2(576, -63)
 texture = ExtResource("15_d8os5")
+
+[node name="fish blue" type="AnimatedSprite2D" parent="."]
+position = Vector2(96, 288)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3id0f")
+script = ExtResource("12_3id0f")
+
+[node name="fish red" type="AnimatedSprite2D" parent="."]
+position = Vector2(96, 352)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_nc7ny")
+script = ExtResource("13_0b3mh")
